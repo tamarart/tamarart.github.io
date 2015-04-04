@@ -1,0 +1,15 @@
+---
+layout: default
+title: SEAT
+modal-id: 5
+date: 2014-07-05
+img: seat.jpg
+img-2: seat_brandday.jpg
+img-3: seat_brandday_2.jpg
+alt: SEAT
+project-date: Barcelona 2014
+client: LOLA
+category: visual design
+description: Interactive brand day for SEAT León. National campaign visual adaptation.
+
+---

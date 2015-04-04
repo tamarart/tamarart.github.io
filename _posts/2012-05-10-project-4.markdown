@@ -1,0 +1,15 @@
+---
+layout: default
+title: cibernarium
+modal-id: 4
+date: 2012-07-15
+img: cibernarium.jpg
+img-2: cibernarium_home.jpg
+img-3: cibernarium_ficha.jpg
+alt: cibernarium
+project-date: Barcelona 2012
+client: http Comunicació
+category: UI design
+description: Cibernarium offers training for professionals and companies, as well as activities for Internet beginners. You can <a href="http://w144.bcn.cat/cibernarium/en/index.do">take a look</a>.
+
+---

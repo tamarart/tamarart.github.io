@@ -1,0 +1,16 @@
+---
+layout: default
+title: DVAM
+modal-id: 7
+date: 2013-07-14
+img: dvam.jpg
+img-2: dvam_home.jpg
+img-3: dvam_article.jpg
+img-4: dvam_users.jpg
+alt: dale la vuelta al mundo
+project-date: Barcelona 2013
+client: http Comunicació
+category: UI design
+description: Dale la vuelta al mundo (DVAM) is the Oxfam young social network to promote the solidarity.
+
+---
