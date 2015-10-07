@@ -1,0 +1,61 @@
+//**
+// Project Mixins
+//**
+
+// Clear after floats
+@mixin clearfix {
+  zoom: 1;
+
+  &:before,
+  &:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+// Apply clearfix to this classes by default
+.clearfix,
+.container,
+.container-full {
+  @include clearfix;
+}
+
+
+
+
+// Responsive mixins
+@mixin responsive($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+@mixin mobilefirst($res) {
+  @media screen and (min-width: $res) {
+    @content;
+  }
+}
+
+//**
+// Responsive Styles
+//**
+
+//@include responsive($big-break) {
+  // e.g. iPad, tablets, small browsers
+//}
+
+
+
+//@include responsive($small-break) {
+  // e.g. iPhone, mobile
+ // body {
+  //  overflow-x: hidden;
+ // }
+//}
+

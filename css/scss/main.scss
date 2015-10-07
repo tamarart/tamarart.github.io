@@ -1,0 +1,30 @@
+// Reset default browser styles using Normalize
+@import "lib/normalize";
+
+// Import fonts from Google
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,900);
+
+// Set variables and reusable mixins
+@import "base/config";
+@import "base/mixins";
+
+// Import typical layout styles
+@import "base/layout";
+@import "base/type";
+
+
+// Use Font Awesome for icons
+@import "lib/icons";
+
+// Specific project styles, add any section specific sass modules here
+@import "pages/project";
+@import "pages/home";
+
+// Additional styles to think about
+@import "base/print";
+
+// If IE support is needed
+@import "base/ie";
+
+// For anything quick and dirty that needs thrown in
+@import "base/shame";

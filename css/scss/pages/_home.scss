@@ -1,0 +1,65 @@
+//**
+// Homepage
+//**
+.grid-projects{
+    margin-bottom: 20px;
+}
+
+@include mobilefirst($small-break) {
+     .item-project{
+    width: 50%;
+    float: left;
+ }
+
+    }
+
+//**
+// GRID PROJECTS
+//**
+
+.item-project{
+    position: relative;
+}
+.hover-projects{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    text-align: center;
+    background-color: rgba(36,42,50,.95);
+        &:hover{
+         zoom: 1;
+         filter: alpha(opacity=50);
+         opacity: 0.9;
+            -webkit-transition: opacity .15s ease-in-out;
+            -moz-transition: opacity .15s ease-in-out;
+            -ms-transition: opacity .15s ease-in-out;
+            -o-transition: opacity .15s ease-in-out;
+            transition: opacity .15s ease-in-out;
+    }
+}
+
+
+.title-grid{
+    font-size: 30px;
+    height: 20%;
+    letter-spacing: 0;
+    padding: 24%;
+    text-transform: none;
+}
+
+
+
+// Responsive styles if needed
+// @include responsive($big-break) {
+// }
+// @include responsive($small-break) {
+// }
+
+// Mobile first styles if needed
+// @include mobilefirst($big-break) {
+// }
+// @include mobilefirst($small-break) {
+// }

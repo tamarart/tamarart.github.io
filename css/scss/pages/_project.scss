@@ -1,0 +1,104 @@
+//**
+// Main Layout Styles
+//**
+
+//**
+// ROOOF
+//**
+
+.main-name {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left:8%;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    span{
+        font-weight: 300;
+    }
+}
+.my-name-box{
+margin-top: 24px;
+}
+.hero-img{
+    padding-top: 20px;
+    //max-height: 640px;
+    overflow: hidden;
+     &.item1{
+        background-color: #1ab2ba;
+     }
+     &.item2{
+        background-color: #242A32;
+     }
+     &.item3{
+        background-color: #ececec;
+     }
+     &.item4{
+        background-color: #809abc;
+     }
+
+}
+
+.center-img{
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+    }
+.full-img{
+    width: 100%;
+    margin-bottom: -6px;
+}
+
+
+.text-project,
+.main-title-box{
+        margin: 0 8%;
+        padding: 70px 0px;
+        min-height: 200px;
+            h2{
+                font-weight: 300;
+            }
+        }
+
+.description-project{
+     h2{
+            font-weight: 300;
+        }
+}
+
+@include mobilefirst($small-break) {
+    .main-title-box{
+    h1{
+        float: left;
+        max-width: 30%;
+        line-height: 50px;
+    }
+    .description-project{
+        margin-left: 50%;
+        max-width: 45%;
+    }
+    }
+
+    .text-project{
+        h2{
+            float: left;
+        }
+        p{
+            margin-left: 50%;
+        }
+    }
+}
+
+
+
+// Responsive styles if needed
+// @include responsive($big-break) {
+// }
+// @include responsive($small-break) {
+// }
+
+// Mobile first styles if needed
+// @include mobilefirst($big-break) {
+// }
+
+
+

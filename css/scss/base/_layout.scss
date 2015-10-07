@@ -1,0 +1,150 @@
+
+//**
+// Media
+//**
+
+img,
+video,
+audio,
+iframe,
+object {
+  max-width: 100%;
+}
+
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+// Default button <a>
+.btn {
+  border-radius: $btn-br;
+  background: transparent;
+  border: 1px solid lighten($grey, 20%);
+  color: lighten($grey, 20%);
+  display: inline-block;
+  height: $line-height;
+  font-size: 16px;
+  letter-spacing: 0;
+  outline: none;
+  padding: 10px 25px 0px 25px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+
+  &:hover,
+  &:focus {
+    background: lighten($grey, 20%);
+    border-color: lighten($grey, 20%);
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &:active {
+    background: darken($grey, 10);
+    border-color: darken($grey, 10);
+  }
+}
+
+
+ul{
+  list-style: none;
+}
+
+//**
+// NAVIGATION
+//**
+
+nav a{
+  text-decoration: none;
+  color: grey;
+}
+
+// Navigation top
+.nav-project{
+  border-top: solid 1px lighten(#7f7f7f, 20%);
+  background-color: white;
+  width: 100%;
+  a{
+    color: #4c4c4c;
+    text-transform: none;
+    text-decoration: none;
+  }
+}
+
+.menu-back{
+  background-color: #e5e5e5;
+  color: lighten($grey, 20%);
+  border-radius: 30px;
+  margin: 14px 0px 0px 8%;
+  text-align: center;
+  width: 40px;
+  &:hover,
+  &:focus {
+    background: lighten($grey, 20%);
+    border-color: lighten($grey, 20%);
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+// Navigation bottom
+.nav-next{
+  margin-left: 50%;
+
+  h3{
+    font-weight: 200;
+    padding: 30px 0px 30px 20px;
+    margin: 0;
+    background-color: lighten(#7f7f7f, 40%);
+    &:hover{
+      background-color: #33b2b9;
+      color: white;
+    }
+  }
+}
+
+//**
+// FOOTER
+//**
+
+footer{
+    background-color: #242A32;
+    min-height: 300px;
+
+    a{
+        color: lighten(#242A32,50%);
+        text-decoration: none;
+        &:hover{
+            color: lighten( $grey, 10% )
+        }
+    }
+}
+.info-footer{
+    font-size: 14;
+    font-weight: 200;
+    color: lighten(#242A32,50%);
+    text-align: center;
+
+}
+.container-center{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.list-inline >li{
+display: inline;
+}
+
+.btn-social{
+    padding: 8px;
+    }
+
+.ico-footer{
+    width: 32px;
+}
+.ico-mail{
+    padding-top: 10px;
+}
