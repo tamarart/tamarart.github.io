@@ -5,7 +5,7 @@
     margin-bottom: 20px;
 }
 
-@include mobilefirst($big-break) {
+@include mobilefirst($small-break) {
      .item-project{
     width: 50%;
     float: left;
