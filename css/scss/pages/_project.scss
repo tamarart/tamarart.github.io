@@ -65,7 +65,7 @@ margin-top: 24px;
         }
 }
 
-@include mobilefirst($small-break) {
+@include mobilefirst($big-break) {
     .main-title-box{
     h1{
         float: left;
