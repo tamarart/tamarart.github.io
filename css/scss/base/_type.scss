@@ -8,7 +8,8 @@ body {
   font-style: normal;
   line-height: 1.6;
   color: $grey;
-
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing:antialiased;
 }
 
 blockquote {
@@ -28,7 +29,6 @@ h4,
 h5,
 p{
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  -webkit-font-smoothing: antialiased;
 }
 
 h1 {
