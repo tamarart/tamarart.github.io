@@ -91,8 +91,9 @@ nav a {
     padding: 30px 0px 30px 20px;
     margin: 0;
     background-color: lighten(#7f7f7f, 40%);
+
     &:hover {
-      background-color: #33b2b9;
+      background-color: $primary-color ;
       color: white;
     }
   }
@@ -127,7 +128,7 @@ footer {
     padding: 30px 0;
 }
 
-.list-inline >li {
+.list-inline > li {
 display: inline;
 }
 

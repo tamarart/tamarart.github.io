@@ -16,10 +16,11 @@
         font-weight: 300;
     }
 }
-.my-name-box{
+.my-name-box {
 margin-top: 24px;
 }
-.hero-img{
+
+.hero-img {
     padding-top: 20px;
     //max-height: 640px;
     overflow: hidden;
@@ -38,11 +39,12 @@ margin-top: 24px;
 
 }
 
-.center-img{
+.center-img {
     display: block;
     margin: 0 auto;
     width: 85%;
     }
+
 .full-img{
     width: 100%;
     margin-bottom: -7px;
@@ -50,32 +52,35 @@ margin-top: 24px;
 
 
 .text-project,
-.main-title-box{
+.main-title-box {
         margin: 0 8%;
         padding: 80px 0px;
         min-height: 200px;
+
             h2{
                 font-weight: 300;
             }
         }
 
-.description-project{
-     h2{
+.description-project {
+     h2 {
             font-weight: 300;
         }
 }
 
 @include mobilefirst($big-break) {
-    .main-title-box{
-    h1{
-        float: left;
-        max-width: 30%;
-        line-height: 50px;
-    }
-    .description-project{
-        margin-left: 50%;
-        max-width: 45%;
-    }
+    .main-title-box {
+
+        h1 {
+            float: left;
+            max-width: 30%;
+            line-height: 50px;
+        }
+
+        .description-project {
+            margin-left: 50%;
+            max-width: 45%;
+        }
     }
 
     .text-project{
