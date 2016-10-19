@@ -17,10 +17,10 @@
 // GRID PROJECTS
 //**
 
-.item-project{
+.item-project {
     position: relative;
 }
-.hover-projects{
+.hover-projects {
     position: absolute;
     top: 0;
     right: 0;
@@ -29,7 +29,7 @@
     opacity: 0;
     text-align: center;
     background-color: rgba(36,42,50,.95);
-        &:hover{
+        &:hover {
          zoom: 1;
          filter: alpha(opacity=50);
          opacity: 0.9;
@@ -39,21 +39,21 @@
             -o-transition: opacity .15s ease-in-out;
             transition: opacity .15s ease-in-out;
     }
-       h2{
+       h2 {
         color: white;
+        font-size: 50px;
+        font-weight: 100;
     }
 }
 
 
-.title-grid{
+.title-grid {
     font-size: 30px;
     height: 20%;
     letter-spacing: 0;
     padding: 24%;
     text-transform: none;
 }
-
-
 
 // Responsive styles if needed
 // @include responsive($big-break) {
