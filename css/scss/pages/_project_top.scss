@@ -1,0 +1,26 @@
+//**
+// Main Layout Styles
+//**
+
+//**
+// FICX
+//**
+
+$ficxColor:#122C4F;
+@import "project.scss";
+
+.container--background {
+  background-color: $ficxColor !important;
+}
+
+
+
+// Responsive styles if needed
+// @include responsive($big-break) {
+// }
+// @include responsive($small-break) {
+// }
+
+// Mobile first styles if needed
+// @include mobilefirst($big-break) {
+// }
