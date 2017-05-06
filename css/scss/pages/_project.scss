@@ -2,108 +2,142 @@
 // Main Layout Styles
 //**
 
-//**
-// ROOOF
-//**
-
 .main-name {
-    font-size: 20px;
-    font-weight: 800;
-    margin-left: 8%;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 0;
-    color: #4c4c4c;
-    line-height: .9;
+  font-size: 20px;
+  font-weight: 800;
+  margin-left: 8%;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0;
+  color: #4c4c4c;
+  line-height: .9;
 }
+
 .my-name-box {
 margin-top: 24px;
 }
 
 .hero-img {
-    padding-top: 20px;
-    //max-height: 640px;
-    overflow: hidden;
-     &.item1{
-        background-color: #1ab2ba;
-     }
-     &.item2{
-        background-color: #242A32;
-     }
-     &.item3{
-        background-color: #ececec;
-     }
-     &.item4{
-        background-color: #809abc;
-     }
+  padding-top: 20px;
+  overflow: hidden;
+
+  &.item1{
+    background-color: #1ab2ba;
+  }
+  &.item2{
+    background-color: #242A32;
+  }
+  &.item3{
+    background-color: #ececec;
+  }
+  &.item4{
+    background-color: #809abc;
+  }
 
 }
 
 .center-img {
-    display: block;
-    margin: 0 auto;
-    width: 85%;
-    }
+  display: block;
+  margin: 0 auto;
+  width: 85%;
+}
 
-.full-img{
-    width: 100%;
-    margin-bottom: -7px;
+.full-img {
+  width: 100%;
+  margin-bottom: -7px;
 }
 
 
 .text-project,
 .main-title-box {
-        margin: 0 8%;
-        padding: 80px 0px;
-        min-height: 200px;
+  margin: 0 8%;
+  padding: 60px 0px;
 
-            h2{
-                font-weight: 300;
-            }
-        }
+    h2 {
+      font-weight: 300;
+    }
+}
 
 .description-project {
-     h2 {
-            font-weight: 300;
-            font-size: 38px;
-        }
+  h2 {
+    font-weight: 300;
+    font-size: 38px;
+    line-height: $line-height;
+  }
+}
+
+.main-title-box h1 {
+    line-height: $line-height;
+}
+
+//hero image top
+
+.container {
+
+  &--top {
+
+    background-color: $ficx-color;
+    margin-bottom: 150px;
+
+    h1,h2 {
+      color: $white;
+    }
+
+    h5 {
+      color: $whiteBroken;
+    }
+
+    .description-project {
+      margin-bottom: $margin*2;
+    }
+
+    .hero-img-top {
+      margin-bottom: -200px;
+    }
+
+    .center-img {
+      width: 120%;
+    }
+  }
+
+  &--color {
+    background-color: $ficx-color;
+
+    h1,h2, p {
+      color: $white;
+    }
+
+  }
 }
 
 @include mobilefirst($big-break) {
-    .main-title-box {
 
-        h1 {
-            float: left;
-            max-width: 30%;
-            line-height: 50px;
-        }
+  .text-project,
+  .main-title-box {
+    padding: 100px 0px;
+  }
 
-        .description-project {
-            margin-left: 50%;
-            max-width: 45%;
-        }
+  .main-title-box {
+
+    h1 {
+      float: left;
+      max-width: 30%;
     }
 
-    .text-project{
-        h2{
-            float: left;
-        }
-        p{
-            margin-left: 50%;
-        }
+    .description-project {
+      margin-left: 50%;
     }
+  }
+
+  .text-project {
+
+    h2 {
+      max-width: 35%;
+      line-height: 1.1em;
+      float:left;
+    }
+
+    p {
+      margin-left: 50%;
+    }
+  }
 }
-
-
-
-// Responsive styles if needed
-// @include responsive($big-break) {
-// }
-// @include responsive($small-break) {
-// }
-
-// Mobile first styles if needed
-// @include mobilefirst($big-break) {
-// }
-
-
-
