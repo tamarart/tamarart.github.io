@@ -28,7 +28,7 @@ object {
   letter-spacing: 0;
   margin-top: 20px;
   outline: none;
-  padding: 15px 25px;
+  padding: 10px 25px;
   text-align: center;
   text-decoration: none;
   text-transform: capitalize;
@@ -71,8 +71,6 @@ nav a {
 
 // Navigation top
 .nav-project {
-  border-top: solid 1px $background-color;
-  background-color: white;
   width: 100%;
 
   i.icon-angle-right {
@@ -89,17 +87,26 @@ nav a {
 
 // Navigation bottom
 .nav-next {
-  margin-left: 50%;
-
   h3 {
     font-weight: 200;
-    padding: 30px 0px 30px 20px;
+    padding: 60px 0px;
     margin: 0;
-    background-color: lighten(#7f7f7f, 40%);
+    background-color: #f7f7f7;
+    text-align: center;
 
     &:hover {
       background-color: $primary-color ;
-      color: white;
+      color: $white;
+    }
+  }
+}
+
+@include mobilefirst($big-break) {
+  .nav-next {
+
+    h3 {
+      text-align: right;
+      padding-right: 40px;
     }
   }
 }
@@ -109,42 +116,12 @@ nav a {
 //**
 
 footer {
-    background-color: #242A32;
-    min-height: 300px;
-
-    a {
-        color: lighten(#242A32,50%);
-        text-decoration: none;
-        &:hover {
-            color: lighten( $grey, 10% )
-        }
-    }
+  border-bottom: 5px solid $primary-color;
 }
+
 .info-footer {
-    font-size: 14;
-    font-weight: 200;
-    color: lighten(#242A32,50%);
-    text-align: center;
-
-}
-.container-center {
-    width: 100%;
-    text-align: center;
-    padding: 30px 0;
-}
-
-.list-inline > li {
-display: inline;
-}
-
-.btn-social {
-    padding: 8px;
-    }
-
-.ico-footer {
-    width: 32px;
-}
-
-.ico-mail {
-    padding-top: 10px;
+  font-size: 16px;
+  font-weight: 200;
+  color: lighten(#242A32,50%);
+  text-align: center;
 }

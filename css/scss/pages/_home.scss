@@ -1,34 +1,53 @@
 //**
 // Homepage
 //**
-.grid-projects{
-    margin-bottom: 20px;
-}
 
 @include mobilefirst($small-break) {
-     .item-project{
+  .item-project {
     width: 50%;
     float: left;
- }
+  }
 
-    }
+}
+
+@include mobilefirst($big-break) {
+  .item-project {
+    width: 33%;
+    float: left;
+  }
+}
 
 //**
 // GRID PROJECTS
 //**
 
-.item-project {
-    position: relative;
+.title-grid {
+  display: flex;
+  -ms-display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  margin: 0 auto;
+  text-transform: none;
+  letter-spacing: 0;
+  padding: 0 15%;
 }
+
+.item-project {
+  position: relative;
+}
+
 .hover-projects {
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
+    display: flex;
+    -ms-display: flex;
+    display: -webkit-flex;
     opacity: 0;
     text-align: center;
-    background-color: rgba(36,42,50,.95);
+    background-color: rgba(255,255,255,.95);
         &:hover {
          zoom: 1;
          filter: alpha(opacity=50);
@@ -40,35 +59,14 @@
             transition: opacity .15s ease-in-out;
     }
        h2 {
-        color: white;
-        font-size: 44px;
-        line-height: 44px;
+        color: black;
+        font-size: 30px;
+        line-height: 34px;
         font-weight: 100;
 
-        @include responsive(490px){
-            font-size: 34px;
-            line-height: 32px;
-        }
+        //@include responsive(490px){
+            //font-size: 34px;
+            //line-height: 32px;
+        //}
     }
 }
-
-
-.title-grid {
-    font-size: 30px;
-    height: 20%;
-    letter-spacing: 0;
-    padding: 24%;
-    text-transform: none;
-}
-
-// Responsive styles if needed
-// @include responsive($big-break) {
-// }
-// @include responsive($small-break) {
-// }
-
-// Mobile first styles if needed
-// @include mobilefirst($big-break) {
-// }
-// @include mobilefirst($small-break) {
-// }

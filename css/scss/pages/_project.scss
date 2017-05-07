@@ -53,13 +53,13 @@ margin-top: 24px;
   padding: 60px 0px;
 
     h2 {
-      font-weight: 300;
+      font-weight: 200;
     }
 }
 
 .description-project {
   h2 {
-    font-weight: 300;
+    font-weight: 200;
     font-size: 38px;
     line-height: $line-height;
   }
@@ -116,6 +116,10 @@ margin-top: 24px;
     padding: 100px 0px;
   }
 
+  .main-title-box.home {
+    padding: 200px 0;
+  }
+
   .main-title-box {
 
     h1 {
@@ -139,5 +143,11 @@ margin-top: 24px;
     p {
       margin-left: 50%;
     }
+  }
+}
+
+@include mobilefirst($small-break) {
+  .main-title-box.home {
+    padding: 120px 0;
   }
 }
