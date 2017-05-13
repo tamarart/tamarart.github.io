@@ -107,13 +107,14 @@ a {
   color: $primary-color;
   font-weight: 400;
   font-size: 14px;
-  text-decoration: underline;
   text-transform: uppercase;
+  text-decoration:none;
   letter-spacing: 0.1em;
 
   &:hover,
   &:focus {
     text-decoration: none;
+    color:darken($primary-color, 10%);
   }
 }
 
