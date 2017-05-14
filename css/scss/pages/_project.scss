@@ -55,6 +55,12 @@ margin-top: 24px;
     h2 {
       font-weight: 200;
       font-size: 38px;
+
+      @include responsive($small-break) {
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 20px;
+      }
     }
 }
 
@@ -63,11 +69,29 @@ margin-top: 24px;
     font-weight: 200;
     font-size: 38px;
     line-height: $line-height;
+
+    @include responsive($small-break) {
+      font-size: 28px;
+      line-height: 32px;
+    }
   }
 }
 
-.main-title-box h1 {
+
+.main-title-box {
+
+  h1 {
     line-height: $line-height;
+  }
+
+  &.home h2 {
+
+    @include responsive($small-break) {
+      font-size: 28px;
+      line-height: 36px;
+    }
+
+  }
 }
 
 //hero image top
@@ -98,6 +122,11 @@ margin-top: 24px;
     .center-img {
       width: 120%;
     }
+
+  }
+
+  &.photo-margin {
+    padding-bottom: $padding*2;
   }
 
   &--color {
